@@ -1,7 +1,7 @@
 # meanSamsungGalaxyAccGyroData
-script to get, clean and mean data from Samsung Galaxy accelerometer and gyroscope
+an assignment for Johns Hopkins univeristy - data science course. 
 
-an assignment for Johns Hopkins univeristy - data science course.
+script to get, clean and means variables from Samsung Galaxy accelerometer and gyroscope grouped by the 30 test subjects and activities they performed. data are downloaded from:https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, which contains all the data, a readme, a description of the variables.
 
 citation for original dataset is:
 
