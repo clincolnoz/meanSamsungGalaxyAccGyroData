@@ -59,13 +59,6 @@ mydata %>%
     mutate(activity=levels(mydata$activity)[as.numeric(mydata$activity)]) ->
     mydata
     
-# mydata_summary <- mydata %>%
-#     group_by(subject,activity) %>%
-#     summarise(mean(c(`tBodyAcc-mean()-X`,`tBodyAcc-mean()-Y`))) %>%
-#     print()
-    
+# create a new data.frame tidy that contains the mean of each varibles mean and standard deviation grouped by subject and activity
 tidy <- recast(mydata, subject+activity ~ variable, mean, id.var = c("subject", "activity"))
 
-# id_var <- c("subject","activity")
-# melted <- melt(mydata, id=id_var)
-# tidy <- dcast(melted, subject+activity ~ variable, mean)
