@@ -13,7 +13,7 @@ tidyr
 reshape2
 
 ## scripts
-downloadFile.R - is called by run_analysis and downloads the zip file
-run_analysis.R - calls downloadFile.R, reads in features.txt, activity_label.txt, test_xxx.txt, and train_xxx.txt, where xxx = X, subject and y. Merges data, assigns column names, removes duplicates and calcualtes mean of each variable grouped by subject and activity. 
+downloadFile.R - is called by run_analysis and downloads the zip file to subdirectory ./data
+run_analysis.R - calls downloadFile.R, unzips file, reads in features.txt, activity_label.txt, test_xxx.txt, and train_xxx.txt, where xxx = X, subject and y. Merges data, assigns column names, removes duplicates and calcualtes mean of each variable grouped by subject and activity. 
 
 
